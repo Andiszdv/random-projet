@@ -6,15 +6,24 @@
   
   body {
     font-family: "Merriweather", sans-serif;
-    background-image:url(../img/bg.jpg);
-  
-    
+    background-image:url(../img/bg.jpg) no-reapeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; 
   }
+header{
+   
+  }
+  /* navbar*/
   .navbar {
     font-size: 18px;
     background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding-bottom: 10px;
+
   }
   
   .main-nav {
@@ -40,6 +49,10 @@
     margin-top: 10px;
     margin-left: 20px;
   }
+  h2{font-family: "anton", sans serif;
+    font-size: 55px;
+    color:#fff;
+  }
   
   .navbar-toggle {
     position: absolute;
@@ -53,13 +66,28 @@
   .active {
     display: block;
   }
-  .connecter{
+  
+  #connecter{
       padding:4px;
       border-color: #fff;
       border-width: 1px;
       background-color: rgb(74, 45, 233);
   }
   
+ 
+  .slogan{
+
+   
+  
+  }
+  .hand{
+
+    z-index: 100;
+  }
+  .hand>img{
+    width: 70%;
+    height: 70%; 
+  }
   @media screen and (min-width: 768px) {
     .navbar {
       display: flex;
@@ -98,3 +126,6 @@
     }
     
   }
+
+
+
