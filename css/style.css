@@ -1,22 +1,4 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  
-  body {
-    font-family: "Merriweather", sans-serif;
-    background-image:url(../img/bg.jpg) no-reapeat;
-    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-    background-size: cover; /* version standardisée */
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0; 
-  }
-header{
-   
-  }
+
   /* navbar*/
   .navbar {
     font-size: 18px;
@@ -65,28 +47,62 @@ header{
   
   .active {
     display: block;
-  }
   
-  #connecter{
-      padding:4px;
-      border-color: #fff;
-      border-width: 1px;
-      background-color: rgb(74, 45, 233);
-  }
   
- 
-  .slogan{
-
+    /*flex*/
+  
+  }
+  html, body: {
+    font-family: "Merriweather", sans serif;
+    margin:0;
+    padding:0;
+  }
+  .fullpage {
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin:0 auto;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height: 34rem;
    
+  }
+  .middle {
+    padding-left: 10px;
+    padding-top:20px;
+    display:flex;
+    justify-content:space-between;
+    background-image:url(../img/bg.jpg) ;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+    height: 39.2rem;
+  }
+  .header {
+  height:50px;
+  }
+  .sidebar {
+    width:40rem;
+    margin:0px;
+    padding:0px;
+    align-content: center;
+    text-align: center;
+    box-align: center;
+  }
+  .footer {
+    padding:0px;
+    margin:0px;
+    background-color:#CCCCCC;
+    text-align:center;
+    height:2rem;	
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    position:absolute;
+    z-index: 30;
   
-  }
-  .hand{
-
-    z-index: 100;
-  }
-  .hand>img{
-    width: 70%;
-    height: 70%; 
   }
   @media screen and (min-width: 768px) {
     .navbar {
@@ -125,7 +141,129 @@ header{
       color: rgba(255, 255, 255, 1);
     }
     
+
+    /*animation*/
+    .motion {
+    -webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.3s 1 both;
+            animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.3s 1 both;
   }
+  
+  @-webkit-keyframes shake-horizontal {
+    0%,
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px);
+    }
+    80% {
+      -webkit-transform: translateX(8px);
+              transform: translateX(8px);
+    }
+    90% {
+      -webkit-transform: translateX(-8px);
+              transform: translateX(-8px);
+    }
+  }
+  @keyframes shake-horizontal {
+    0%,
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px);
+    }
+    80% {
+      -webkit-transform: translateX(8px);
+              transform: translateX(8px);
+    }
+    90% {
+      -webkit-transform: translateX(-8px);
+              transform: translateX(-8px);
+    }
+  
+  }
+  /*telephone avec main*/
+  #callTOaction{
+  font-family: "Merriweather", sans serif;
+  font-size: 1.8em;
+  position:absolute;
+  top: 31.5rem;
+  right: 17rem; 
+  }
+button:focus {outline-style:none;
+  }
+  #cellphone{
+    text-align: center;
+    position:relative;
+    box-align: center;
+    }
+  
+  #noms{filter: blur(7px);
+    font-family: "anton", sans serif;
+    font-size: 2.5em;
+    color: bisque;
+    top: 9rem;
+    right: 17rem;
+    position:absolute;
+  }
+  p{
+  font-size: 28px;
+ 
+}
+ /*style du bouton type Iphone*/
 
-
-
+  input[type=button], input[type=submit], input[type=reset], button, .button {
+    padding: 5px 15px;
+    margin: 3px 4px;
+    display: inline-block;
+    color: #959191;
+    font-size: 26px;
+    cursor: pointer;
+    background: #FFFFFF;
+    background: linear-gradient(top, #FFFFFF 0%, #e6e6e6 100%);
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #e6e6e6 100%);
+    background: -webkit-linear-gradient(top, #FFFFFF 0%, #e6e6e6 100%);
+    background: -o-linear-gradient(top, #FFFFFF 0%, #e6e6e6 100%);
+    border: 1px solid #9D9999;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow:0px 0px 2px 1px rgba(98, 98, 98, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+    -moz-box-shadow:0px 0px 2px 1px rgba(98, 98, 98, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+    -webkit-box-shadow:0px 0px 2px 1px rgba(98, 98, 98, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+    -o-box-shadow:0px 0px 2px 1px rgba(98, 98, 98, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+  }
+  input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover, button:hover, .button:hover {
+    background: linear-gradient(top, #ffffff 0%, #FFFFFF 100%);
+    background: -moz-linear-gradient(top, #ffffff 0%, #FFFFFF 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #FFFFFF 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #FFFFFF 100%);
+  }
+  input[type=button]:active, input[type=submit]:active, input[type=reset]:active, button:active, .button:active{
+    opacity:0.8;
+  }
+ 
