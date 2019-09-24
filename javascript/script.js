@@ -35,8 +35,6 @@ setTimeout(function(){noms.style.filter = "blur()"; }, 3000);
 element.style.animation = 'motion';
 
 /* trigger reflow */
-element.offsetHeight; 
-noms.offsetHeight;
 element.style.animation = null; 
 noms.style.filter = null;
 }
@@ -46,4 +44,8 @@ document.getElementById("callTOaction").addEventListener("click", () => {
   
 });
 
+var form = document.querySelector("form");
+form.addEventListener("submit", function () {
+  _currentItems.push();
+});
 
