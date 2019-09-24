@@ -1,4 +1,4 @@
-
+_currentItems=null;
 /*random*/
 function _shuffle (array) {
   for (var i = array.length - 1; i > 0; i--) {
@@ -30,11 +30,15 @@ var randomItem  = (function(allItems){
 /*trigger btn*/
 document.getElementById("noms").innerHTML = randomItem;
 let element = document.getElementById("cellphone");
+document.getElementById("logoanim") = 'blur(20px)';
 element.classList.add("motion");
 setTimeout(function(){noms.style.filter = "blur()"; }, 3000);
 element.style.animation = 'motion';
 
+
 /* trigger reflow */
+element.offsetHeight; 
+noms.offsetHeight;
 element.style.animation = null; 
 noms.style.filter = null;
 }
@@ -44,8 +48,11 @@ document.getElementById("callTOaction").addEventListener("click", () => {
   
 });
 
-var form = document.querySelector("form");
-form.addEventListener("submit", function () {
-  _currentItems.push();
-});
+let form = document.querySelector('form');
 
+form.addEventListener('submit', e =>{
+  e.preventDefault();
+  const name = form.name.value;
+
+  name.value.push(_currentItems)
+})
