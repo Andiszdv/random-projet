@@ -30,7 +30,6 @@ var randomItem  = (function(allItems){
 /*trigger btn*/
 document.getElementById("noms").innerHTML = randomItem;
 let element = document.getElementById("cellphone");
-document.getElementById("logoanim") = 'blur(20px)';
 element.classList.add("motion");
 setTimeout(function(){noms.style.filter = "blur()"; }, 3000);
 element.style.animation = 'motion';
