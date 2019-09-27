@@ -55,3 +55,74 @@ form.addEventListener('submit', e =>{
 
   name.value.push(_currentItems)
 })
+
+
+
+// code random andrea 
+
+
+
+/*the random prob*/
+const input = document.getElementById("item");
+const submitButton = document.getElementById("submit");
+
+const list = document.getElementById("list");
+const generateButton = document.getElementById("generate");
+const generated = document.getElementById("generated");
+
+let itemsArray = [];
+
+submitButton.addEventListener("click", () => {
+	let itemName = input.value;
+
+	if (itemName != "") {
+		itemsArray.push(itemName);
+		let itemElem = document.createElement("div");
+		itemElem.classList.add("list-item");
+		itemElem.innerText = itemName;
+		list.appendChild(itemElem);
+		input.value = "";
+		return;
+	}
+
+	alert("Please enter an item");
+});
+
+generateButton.addEventListener("click", () => {
+	generated.innerText = itemsArray[randomIndex(0, itemsArray.length)];
+});
+
+function randomIndex (min, max) {
+	return Math.floor(Math.random() * (max - min) + min);
+}
+
+
+//the photo upload pour noms input
+/*const input = document.getElementById("item");
+const submitButton = document.getElementById("submit");
+
+const list = document.getElementById("list");
+const generateButton = document.getElementById("generate");
+const generated = document.getElementById("generated");
+
+let itemsArray = [];
+
+submitButton.addEventListener("click", () => {
+	let itemName = input.value;
+
+	if (itemName != "") {
+		itemsArray.push(itemName);
+		let itemElem = document.createElement("div");
+		itemElem.classList.add("list-item");
+		itemElem.innerText = itemName;
+		list.appendChild(itemElem);
+		input.value = "";
+		return;
+	}
+
+	alert("Please enter an item");
+});
+
+generateButton.addEventListener("click", () => {
+	generated.innerText = itemsArray[randomIndex(0, itemsArray.length)];
+});
