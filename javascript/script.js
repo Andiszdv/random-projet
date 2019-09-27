@@ -36,10 +36,9 @@ element.style.animation = 'motion';
 
 
 /* trigger reflow */
-element.offsetHeight; 
-noms.offsetHeight;
 element.style.animation = null; 
 noms.style.filter = null;
+
 }
 /*click*/ 
 document.getElementById("callTOaction").addEventListener("click", () => {
