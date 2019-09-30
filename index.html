@@ -1,50 +1,54 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Anton%7CMerriweather+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Secouez-moi</title>
 </head>
+
 <body>
   <div class="fullpage">
-    <div class="main">
-      <div class="header">
-        <div class="logoanim">
-          <img src="img/secouez-moiLogo.svg" alt="secouez-moi">
-          <nav class="navbar">
-          </nav>
-        </div>
+    <header>
+      <nav class="navbar"><h1></h1>
+      </nav>
+    </header>
+    <div class="middle">
+      <div class="content">
+        <h1>Trouvez votre DEV</h1>
+        <form>
+          <label for="ajouter">Ajoutez un nom</label> :
+          <input type="text" name="name" id="name">
+          <input type="submit" value="+">
+        </form>
       </div>
-      <div class="middle">
-        <div class="content">
-          <h1>Trouvez votre DEV</h1>
-          <form>
-            <label for="ajouter">Ajoutez un nom</label> :
-            <input type="text" name="name" id="name">
-
-            <input type="submit" value="+">
-          </form>
-        </div>
-        <!--content-->
-        <div class="sidebar">
-          <div id="cellphone">
-            <p id="noms"></p>
-            <img src="img/main.png" width="80%" height="80%" alt="main">
-            <button id="callTOaction">Cliquez-ici</button>
+      <div class="sidebar">
+        <div id="cellphone">
+          <div class="boite">
+            <div id="noms">
+            </div>
+            <div class="secouezmoi">
+              <img src="img/secouez-moiLogo.svg" alt="secouez-moi" width="200px" >
+            </div>
+            <button class="btn-grad" id="callTOaction">Cliquez-ici
+            </button>
           </div>
+          <div class="hand">
+            <img src="img/main.png" width="100%" height="100%" alt="main">
+          </div>
+          <div class="container"></div>
         </div>
       </div>
-      <!--middle-->
     </div>
-    <!--main-->
-    <div class="footer">
-      
-    </div>
+    <footer>
+    </footer>
   </div>
-  <!--fullpage-->
   <script src="javascript/script.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/alexgibson/shake.js/master/shake.js"></script>
 </body>
+
 </html>
