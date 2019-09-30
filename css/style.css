@@ -372,9 +372,9 @@ width: 25%;
 
 }
 
-* ----------------------------------------
-* animation slide-out-X
-* ----------------------------------------
+/* 
+animation slide-out-X
+
 */
 @-webkit-keyframes slideoutX {
   0% {
