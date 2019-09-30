@@ -12,26 +12,25 @@
 </head>
 
 <body>
-    <nav>
-        <div class="topnav">
-            <a href="#home" class="active">Secouez-moi...</a>
-            <a href="#news">Info</a>
-            <a href="#contact">Se connecter</a>
-            <a href="#about">Créer un compte</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </div>
-        </nav> 
-  <div class="fullpage">
-    <div class="main">
-      <div class="header">
-          <nav class="navbar">
-          </nav>
-        <div class="logoanim">
-        <img src="img/secouez-moiLogo.svg" alt="secouez-moi" >
-      </div>
-      </div>
+  <nav class="navbar">
+    <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+            <i class="fa fa-bars"></i>
+        </label>
+    <a href="#" class="logo">Secouez-moi...</a>
+    <input type="checkbox" id="chkToggle"></input>
+    <ul class="main-nav" id="js-menu">
+      <li>
+        <a href="#" class="nav-links">Info</a>
+      </li>
+      <li>
+        <a href="#" class="nav-links">Créer un compte</a>
+      </li>
+      <li>
+        <a href="#" class="nav-links">Se connecter</a>
+      </li>
+    </ul>
+  </nav>
+   <main>
       <div class="middle">
         <div class="content">
           <h1>Trouvez votre DEV</h1>
@@ -42,25 +41,9 @@
               
             <input type="submit" value="+">
             </form>
+            <section id="list"></section>
         </div>
-        <!-------partie andrea champ saisie-->
-        <main>
-          <div id="generatorpart">
-                      <h1>Random Generator</h1>
-  
-              <div class="form">
-                   <input type="text" name="item" id="item"  />
-                   <button id="submit">+</button>
-               </div>    
-    
-              <section id="list"></section>
-              <section id="generator">
-                     <button id="generate">GENERATE</button>
-                <div id="generated"></div>
-              </section>
-          </div>
-  </main>
-  <!---------------------fin partie andrea champ saisie-->
+       
         <!--content-->
         <div class="sidebar">
           <div id="cellphone">
@@ -72,6 +55,8 @@
       </div>
       <!--middle-->
     </div>
+  </main>
+</div>
     <!--main-->
     <div class="footer">
     </div>

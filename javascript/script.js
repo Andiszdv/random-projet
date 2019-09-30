@@ -1,4 +1,4 @@
-_currentItems=null;
+_currentItems=[];
 /*random*/
 function _shuffle (array) {
   for (var i = array.length - 1; i > 0; i--) {
@@ -25,7 +25,7 @@ var randomItem  = (function(allItems){
   var _selectedItem = _currentItems.pop();
   localStorage.setItem(_key, JSON.stringify(_currentItems));
   return _selectedItem;
-})(["MOHAMED S.","MOHAMED K.","HERVÉ","SALIM","ANDRÉA","HADIBÉRÉ","YANNICK","AUDREY","SIKA","AMEL"]);
+});
 
 /*trigger btn*/
 document.getElementById("noms").innerHTML = randomItem;
@@ -55,54 +55,6 @@ form.addEventListener('submit', e =>{
 
   name.value.push(_currentItems)
 })
-
-
-
-// code random andrea 
-
-
-
-/*the random prob*/
-const input = document.getElementById("item");
-const submitButton = document.getElementById("submit");
-
-const list = document.getElementById("list");
-const generateButton = document.getElementById("generate");
-const generated = document.getElementById("generated");
-
-let itemsArray = [];
-
-submitButton.addEventListener("click", () => {
-	let itemName = input.value;
-
-	if (itemName != "") {
-		itemsArray.push(itemName);
-		let itemElem = document.createElement("div");
-		itemElem.classList.add("list-item");
-		itemElem.innerText = itemName;
-		list.appendChild(itemElem);
-		input.value = "";
-		return;
-	}
-
-	alert("Please enter an item");
-});
-
-generateButton.addEventListener("click", () => {
-	generated.innerText = itemsArray[randomIndex(0, itemsArray.length)];
-});
-
-function randomIndex (min, max) {
-	return Math.floor(Math.random() * (max - min) + min);
-}
-
-// navbar
-let mainNav = document.getElementById("js-menu");
-let navBarToggle = document.getElementById("js-navbar-toggle");
-
-navBarToggle.addEventListener("click", function() {
-  mainNav.classList.toggle("active");
-});
 
 //the photo upload pour noms input
 /*const input = document.getElementById("item");
