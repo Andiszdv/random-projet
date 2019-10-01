@@ -1,10 +1,4 @@
 
-
-  
-
-
-
-
 /*random*/
 let _key = "array";
 let _currentItems = [];
@@ -17,13 +11,13 @@ function _shuffle(array) {
   }
   return array;
 }
-var form = document.querySelector("form");
+/*var form = document.querySelector("form");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   let input = document.getElementById('name');
   _currentItems.push(input.value);
   console.log(_currentItems);
-});
+});*/
 function clickRandom() {
   let randomItem = (function (allItems) {
     try {
@@ -38,26 +32,26 @@ function clickRandom() {
     let _selectedItem = _currentItems.pop();
     localStorage.setItem(_key, JSON.stringify(_currentItems));
     return _selectedItem;
-  })(_currentItems);
+  })(["Salim", "Hervé", "Andrea","Hadibere", "MohammedK", "MohammedS","Sika", "Audrey", "Amel","Yannick"]);
 
 
 /*trigger btn*/
-const personnage1 =  document.querySelector('.container');
-personnage1.innerHTML += `<div class="slideoutX"><img src="../img/personnages.png" alt="personnages"></div>`;
 
 
 document.getElementById("noms").innerHTML = randomItem;
-let element = document.getElementById("cellphone"); 
+const element = document.getElementById("cellphone"); 
 element.classList.add("motion");
-let element2 = document.querySelector(".secouezmoi"); 
+const element2 = document.querySelector(".secouezmoi"); 
 element2.classList.add("motion2");
+
 setTimeout(function(){noms.style.filter = "blur()"; }, 3000);
 element.style.animation = 'motion';
 element2.style.animation = 'motion2';
+const personnage1 = document.querySelector('.container')
+personnage1.innerHTML += `<div class="slideoutX"><img src="../img/personnages.png" alt="personnages"></div>`;
 
-/*const displayNone = document.querySelector('.logoanim');
-console.log(displayNone.style.visibility);
-displayNone.style.visibility = "hidden";*/
+
+
 
 
 /* trigger reflow */ 
@@ -67,6 +61,8 @@ element.style.animation = null;
 element2.offsetHeight; 
 element2.style.animation = null;  
 noms.style.filter = null;
+setTimeout(function(){personnage1.innerHTML  = `<div></div>`; }, 1000);
+
 
 
 
@@ -75,20 +71,16 @@ noms.style.filter = null;
 /*click*/
 document.getElementById("callTOaction").addEventListener("click", () => {
   clickRandom();
-
 });
 
-/*document.getElementById("callTOaction").addEventListener("mouseout", () => {
-  displayNone.style.visibility = "visible";
-
-});*/
+/*list names
 let input = document.getElementById('name');
 var form = document.querySelector("form");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   _currentItems.push(input.value);
   console.log(_currentItems);
-});
+});*/
 
 /*shake phone */
 let shakeEvent = new Shake({threshold: 15});
@@ -102,4 +94,3 @@ window.addEventListener('shake', function(){
 function stopShake(){
     shakeEvent.stop();
 }
-
