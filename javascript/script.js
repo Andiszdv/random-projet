@@ -32,7 +32,8 @@ function clickRandom() {
     let _selectedItem = _currentItems.pop();
     localStorage.setItem(_key, JSON.stringify(_currentItems));
     return _selectedItem;
-  })(["Salim", "Hervé", "Andrea","Hadibere", "MohammedK", "MohammedS","Sika", "Audrey", "Amel","Yannick"]);
+    const salim = "test";
+  })(["salim", "Hervé", "Andrea","Hadibere", "MohammedK", "MohammedS","Sika", "Audrey", "Amel","Yannick"]);
 
 
 /*trigger btn*/
