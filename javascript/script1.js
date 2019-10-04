@@ -1,5 +1,6 @@
 
 /*random*/
+function clickRandom() {
 let _key = "array";
 let _currentItems = ["salim", "Hervé", "Andrea","Hadibere", "MohammedK", "MohammedS","Sika", "Audrey", "Amel","Yannick"];
 function _shuffle(array) {
@@ -11,7 +12,6 @@ function _shuffle(array) {
   }
   return array;
 }
-
 /*var form = document.querySelector("form");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -19,8 +19,8 @@ form.addEventListener("submit", function (e) {
   _currentItems.push(input.value);
   console.log(_currentItems);
 });*/
-function clickRandom() {
-  let randomItem = (function (allItems) {
+
+ /* let randomItem = (function (allItems) {
     try {
       _currentItems = JSON.parse(localStorage.getItem(_key) || "[]");
     } catch (e) {
@@ -36,11 +36,11 @@ function clickRandom() {
   
   })(["salim", "Hervé", "Andrea","Hadibere", "MohammedK", "MohammedS","Sika", "Audrey", "Amel","Yannick"]);
   
-  
+
 /*trigger btn*/
 
 
-document.getElementById("noms").innerHTML = randomItem;
+document.getElementById("noms").innerHTML = _currentItems;
 const element = document.getElementById("cellphone"); 
 element.classList.add("motion");
 const element2 = document.querySelector(".secouezmoi"); 
@@ -49,17 +49,10 @@ element2.classList.add("motion2");
 setTimeout(function(){noms.style.filter = "blur()"; }, 3000);
 element.style.animation = 'motion';
 element2.style.animation = 'motion2';
-
-
 /*const personnage1 = document.querySelector('.container')
 personnage1.innerHTML += `<div class="slideoutX"><img src="../img/personnages.png" alt="personnages"></div>`;*/
 
-/*for(let k = 0; k < _currentItems.length; k++ ){
-  let html = `<div> Bonjour ${_currentItems[k]}</div>`;
-  document.getElementById("noms").innerHTML = `Bonjour ${_currentItems[k]}`;
 
-  console.log(html);
-};/*
 
 
 
@@ -70,20 +63,13 @@ element.style.animation = null;
 element2.offsetHeight; 
 element2.style.animation = null;  
 noms.style.filter = null;
-/*setTimeout(function(){personnage1.innerHTML  = `<div></div>`; }, 1000);*/
-
-
-
-
-
-}
+setTimeout(function(){personnage1.innerHTML  = `<div></div>`; }, 1000);
+};
 /*click*/
 document.getElementById("callTOaction").addEventListener("click", () => {
   clickRandom();
 });
-document.getElementById("information").addEventListener("click", () => {
-  infoHtml();
-});
+
 /*list names
 let input = document.getElementById('name');
 var form = document.querySelector("form");
@@ -104,25 +90,4 @@ window.addEventListener('shake', function(){
 //stop listening
 function stopShake(){
     shakeEvent.stop();
-}
-function infoHtml(){
-const essai = document.querySelector('.test');
-essai.innerHTML =`<div class="grid-container">
-        <div class="left">
-          <div class="titre">
-            <h2> Ils sont dix et DÉTERMINÉS</h2>
-          </div>
-          <div class="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, eligendi! Vitae, debitis quasi nostrum ut voluptate non nemo ad enim aliquam odit laborum consequatur nihil itaque voluptatibus esse minus dolorum.</div>
-        </div>
-        <div class="fo1"><img src="img/hadibere.png"  alt="Hadibéré"><p>Hadibéré</p></div>
-        <div class="fo2"><img src="img/amel.png"  alt="Amel"><p>Amel</p></div>
-        <div class="fo4"><img src="img/yannick.png"  alt="Yannick"><p>Yannick</p></div>
-        <div id="info" class="fo5"><img src="img/andrea.png" alt="Andréa"><p>Andréa</p></div>
-        <div class="fo3"><img src="img/mohameds.png"  alt="Mohamed S"><p>Mohamed S</p></div>
-        <div class="fo6"><img src="img/sika.png" alt="Sika"><p>Sika</p></div>
-        <div class="fo7"><img src="img/mohamedk.png" alt="Mohamed K"><p>Mohamed K</p></div>
-        <div class="fo8"><img src="img/salim.png" alt="Salim"><p>Salim</p></div>
-        <div class="fo9"><img src="img/audrey.png" alt="Audrey"><p>Audrey</p></div>
-        <div class="fo10"><img src="img/herve.png" alt="Hervé"><p>Hervé</p></div>
-      </div>`;
 }
