@@ -102,13 +102,19 @@ main{
 }
 footer {
   padding:0px;
+  padding-right: 1Opx;
   margin:0px;
   background-color:#ff0bd1;
-  text-align:center;
+  text-align:right;
+  color: #fff;
   height:50px;	
   display:flex;
   flex-direction:column;
   justify-content:center;
+  font-size: 1em;
+}
+footer>div{
+  padding-right: 10px;
 }
 
 section{ 
@@ -476,5 +482,3 @@ h2.hasard{
   font-size: 1.2em;
 }
 }
-  
- 

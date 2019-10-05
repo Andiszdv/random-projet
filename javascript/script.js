@@ -34,7 +34,7 @@ function clickRandom() {
     localStorage.setItem(_key, JSON.stringify(_currentItems));
     return _selectedItem;
   
-  })(["salim", "Hervé", "Andrea","Hadibere", "MohammedK", "MohammedS","Sika", "Audrey", "Amel","Yannick"]);
+  })(["  salim", "  Hervé", "  Andrea","Hadibéré", "Mohamed K", "Mohamed S","   Sika", "  Audrey", "   Amel","Yannick"]);
   
   
 /*trigger btn*/
