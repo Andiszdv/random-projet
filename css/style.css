@@ -21,12 +21,22 @@ h2{
 
 }
 h2.trouver{
+  padding-top: 2rem;
   padding-left: 10rem;
 transform:rotate(5deg);
 }
 h2.hasard{
   padding-left: 14rem;
   transform:rotate(-5deg);
+}
+i{
+  font-size: 2em;
+color:#fff;
+}
+.fa-info-circle{
+  font-size: 10em;
+  padding-left: 35rem;
+  margin-top: -4rem;
 }
 .et
 {
@@ -151,6 +161,7 @@ section{
   text-align: center;
   padding: 2rem;
   display: grid;
+  grid-column-gap: 2em;
   grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "left fo1 fo2 fo3 fo4 fo5" "left fo6 fo7 fo8 fo9 fo10";
@@ -170,7 +181,11 @@ section{
 
 .txt { grid-area: txt; 
 font-size: 2em;
-text-align: left;}
+text-align: justify;
+-webkit-hyphens: auto;
+-moz-hyphens: auto;
+hyphens: auto;
+}
 
 .fo1 { grid-area: fo1; }
 
@@ -304,7 +319,7 @@ button:focus {outline-style:none;
   font-family: "anton", sans serif;
   font-size: 2.5em;
   color: bisque;
-  width: fit-content;
+
 }
 p{
 font-size: 28px;
@@ -420,6 +435,7 @@ animation slide-out-X
     padding-bottom: 0;
     height: 70px;
     align-items: center;
+   
   }
 
   #chkToggle:checked + ul.main-nav {
@@ -435,7 +451,9 @@ animation slide-out-X
 
   .main-nav li {
     margin: 0;
+    font-size: 28px;
   }
+
 
   .nav-links {
     margin-left: 40px;
@@ -458,7 +476,6 @@ animation slide-out-X
 }
   
   
-}
 .logo {
 font-family: "anton", sans serif;
 display: inline-block;
@@ -469,7 +486,9 @@ color: #999;
 }
 
 @media screen and (max-width: 768px) {
-
+h1{
+  font-size: 16px;
+}
 .grid-container {
   display: flex;
   flex-wrap: wrap;
@@ -483,6 +502,7 @@ h2.trouver{
   padding-left: 3rem;
 transform:rotate(5deg);
 font-size: 1.5em;
+padding-top: 0rem;
 }
 h2.hasard{
   padding-left: 5rem;
@@ -503,6 +523,27 @@ h2.hasard{
 #callTOaction{
   font-family: "roboto", sans serif;
   font-size: 1.2em;
+}
+.secouezmoi{
+  padding-bottom: 0;
+}
+.boite{
+padding-left: 22%;
+}
+#noms {
+  font-size: 2em;
+}
+.fa-info-circle{
+  font-size: 2em;
+  padding-left: 10rem;
+}
+.main-nav li {
+  margin: 0;
+  font-size: 28px;
+}
+.middle {
+  padding-left: 0px;
+  padding-top: 0px;
 }
 
 }

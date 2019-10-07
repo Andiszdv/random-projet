@@ -11,10 +11,6 @@ function _shuffle(array) {
   }
   return array;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> herve
 /*var form = document.querySelector("form");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -52,8 +48,6 @@ element2.classList.add("motion2");
 setTimeout(function(){noms.style.filter = "blur()"; }, 3000);
 element.style.animation = 'motion';
 element2.style.animation = 'motion2';
-const personnage1 = document.querySelector('.container')
-personnage1.innerHTML += `<div class="slideoutX"><img src="../img/personnages.png" alt="personnages"></div>`;
 
 
 
@@ -91,6 +85,9 @@ document.getElementById("callTOaction").addEventListener("click", () => {
 document.getElementById("information").addEventListener("click", () => {
   infoHtml();
 });
+document.getElementById("iconeinfo").addEventListener("click", () => {
+  infoHtml();
+});
 
 /*list names
 let input = document.getElementById('name');
@@ -117,15 +114,15 @@ function infoHtml(){
 const essai = document.querySelector('.test');
 essai.innerHTML =`<div class="grid-container">
         <div class="left">
-          <div class="titre">
+          <div id="info" class="titre">
             <h2> Ils sont dix et DÉTERMINÉS</h2>
           </div>
-          <div class="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, eligendi! Vitae, debitis quasi nostrum ut voluptate non nemo ad enim aliquam odit laborum consequatur nihil itaque voluptatibus esse minus dolorum.</div>
+          <div  class="txt">Cliquez parmi une liste de 10 développeurs en devenir, motivé(e)s, passionné(e)s, acharné(e)s, déterminé(e)s, courageux(ses), vaillant(e)s, aux profils divers et atypiques. A chaque click apparaîtra, au bout de 3 secondes, un nom au hasard. Maintenant à vous de jouer!!!</div>
         </div>
-        <div class="fo1"><img src="img/hadibere.png"  alt="Hadibéré"><p>Hadibéré</p></div>
+        <div  class="fo1"><img src="img/hadibere.png"  alt="Hadibéré"><p>Hadibéré</p></div>
         <div class="fo2"><img src="img/amel.png"  alt="Amel"><p>Amel</p></div>
         <div class="fo4"><img src="img/yannick.png"  alt="Yannick"><p>Yannick</p></div>
-        <div id="info" class="fo5"><img src="img/andrea.png" alt="Andréa"><p>Andréa</p></div>
+        <div  class="fo5"><img src="img/andrea.png" alt="Andréa"><p>Andréa</p></div>
         <div class="fo3"><img src="img/mohameds.png"  alt="Mohamed S"><p>Mohamed S</p></div>
         <div class="fo6"><img src="img/sika.png" alt="Sika"><p>Sika</p></div>
         <div class="fo7"><img src="img/mohamedk.png" alt="Mohamed K"><p>Mohamed K</p></div>
