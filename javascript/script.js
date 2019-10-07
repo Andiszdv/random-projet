@@ -11,7 +11,10 @@ function _shuffle(array) {
   }
   return array;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> herve
 /*var form = document.querySelector("form");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -49,6 +52,10 @@ element2.classList.add("motion2");
 setTimeout(function(){noms.style.filter = "blur()"; }, 3000);
 element.style.animation = 'motion';
 element2.style.animation = 'motion2';
+const personnage1 = document.querySelector('.container')
+personnage1.innerHTML += `<div class="slideoutX"><img src="../img/personnages.png" alt="personnages"></div>`;
+
+
 
 
 /*const personnage1 = document.querySelector('.container')
@@ -84,6 +91,7 @@ document.getElementById("callTOaction").addEventListener("click", () => {
 document.getElementById("information").addEventListener("click", () => {
   infoHtml();
 });
+
 /*list names
 let input = document.getElementById('name');
 var form = document.querySelector("form");

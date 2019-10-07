@@ -37,7 +37,29 @@ h2.hasard{
   transform:rotate(-10deg);
 
 }
+h2{
+  color:#fff;
+  font-size: 3em;
+  font-family: "roboto", sans serif;
 
+}
+h2.trouver{
+  padding-left: 10rem;
+transform:rotate(20deg);
+}
+h2.hasard{
+  transform:rotate(-5deg);
+}
+
+
+.formulaire{
+  padding-left: 7rem;
+  color:#fff;
+  font-size: 2.5em;
+  font-family: "roboto", sans serif;
+  transform:rotate(-15deg);
+
+}
 .fullpage {
   display:flex;
   flex-direction: column;
