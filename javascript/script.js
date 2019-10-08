@@ -33,7 +33,7 @@ function clickRandom() {
     localStorage.setItem(_key, JSON.stringify(_currentItems));
     return _selectedItem;
   
-  })(["  salim", "  Hervé", "  Andrea","Hadibéré", "Mohamed K", "Mohamed S","   Sika", "  Audrey", "   Amel","Yannick"]);
+  })([`<p>Salim</p><img src="img/salim1.png ">`, `<p>Hervé</p><img src="img/herve1.png ">`, `<p>Andréa</p><img src="img/andrea1.png ">`,`<p>Hadibéré</p><img src="img/hadibere1.png ">`,`<p>Mohamed K</p><img src="img/mohamedK1.png ">`, `<p>Mohamed S</p><img src="img/mohameds1.png ">`,`<p>Sika</p><img src="img/sika1.png ">`,`<p>Audrey</p><img src="img/audrey1.png ">`, `<p> Amel</p><img src="img/amel1.png ">`,`<p>Yannick</p><img src="img/yannick1.png ">`]);
   
   
 /*trigger btn*/
@@ -98,18 +98,6 @@ form.addEventListener("submit", function (e) {
   console.log(_currentItems);
 });*/
 
-/*shake phone */
-let shakeEvent = new Shake({threshold: 15});
-shakeEvent.start();
-window.addEventListener('shake', function(){
-  clickRandom();
-
-}, false);
-
-//stop listening
-function stopShake(){
-    shakeEvent.stop();
-}
 function infoHtml(){
 const essai = document.querySelector('.test');
 essai.innerHTML =`<div class="grid-container">
@@ -117,7 +105,7 @@ essai.innerHTML =`<div class="grid-container">
           <div id="info" class="titre">
             <h2> Ils sont dix et DÉTERMINÉS</h2>
           </div>
-          <div  class="txt">Cliquez parmi une liste de 10 développeurs en devenir, motivé(e)s, passionné(e)s, acharné(e)s, déterminé(e)s, courageux(ses), vaillant(e)s, aux profils divers et atypiques. A chaque click apparaîtra, au bout de 3 secondes, un nom au hasard. Maintenant à vous de jouer!!!</div>
+          <div  class="txt">Cliquez parmi une liste de 10 développeurs en devenir, motivé(e)s, passionné(e)s, acharné(e)s, déterminé(e)s, courageux(ses), vaillant(e)s, aux profils divers et atypiques. A chaque click apparaîtra, au bout de 3 secondes, un nom au hasard. <strong>Maintenant à vous de jouer!!!</strong></div>
         </div>
         <div  class="fo1"><img src="img/hadibere.png"  alt="Hadibéré"><p>Hadibéré</p></div>
         <div class="fo2"><img src="img/amel.png"  alt="Amel"><p>Amel</p></div>
