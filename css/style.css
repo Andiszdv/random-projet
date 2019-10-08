@@ -2,7 +2,16 @@
 label, input, textarea {
   display: block;
 }
-
+input {
+  width: 395px;
+}
+textarea {
+  width: 395px;
+}
+button {
+  width: 50px;
+  background-color: rgb(94, 221, 94);
+}
  /*flex*/
 html, body {
   font-family: "roboto", sans serif;
@@ -412,12 +421,20 @@ animation slide-out-X
   font-family: "anton", sans serif;
  letter-spacing: 0.5em;
 }
-h1 {
-  color: #eee;
+/*h1 {
   font-family: 'anton',sans serif;
   letter-spacing:5px;
+  margin-top:Opx;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
-
+.contactsection {
+  background-color: rgb(204, 201, 201);
+  display: flex;
+  justify-content: space-around;
+  text-align: start;
+}*/
 .navbar-toggle {
   position: absolute;
   top: 10px;
