@@ -1,6 +1,7 @@
 /*contact*/
 label, input, textarea {
   display: block;
+  border-radius: 7px;
 }
 input {
   width: 395px;
@@ -9,8 +10,11 @@ textarea {
   width: 395px;
 }
 button {
-  width: 50px;
-  background-color: rgb(94, 221, 94);
+  width: 100%;
+  background-color: rgb(185, 88, 164);
+  border-radius: 5px;
+  padding-bottom:10px;
+  margin-bottom:10px;
 }
  /*flex*/
 html, body {
@@ -437,7 +441,7 @@ animation slide-out-X
   font-family: "anton", sans serif;
  letter-spacing: 0.5em;
 }
-/*h1 {
+h1 {
   font-family: 'anton',sans serif;
   letter-spacing:5px;
   margin-top:Opx;
@@ -450,7 +454,7 @@ animation slide-out-X
   display: flex;
   justify-content: space-around;
   text-align: start;
-}*/
+}
 .navbar-toggle {
   position: absolute;
   top: 10px;
