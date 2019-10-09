@@ -8,8 +8,6 @@
   <link href="https://fonts.googleapis.com/css?family=Anton%7CMerriweather+Sans&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-  <script src="javascript/script.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <title>Secouez-moi</title>
 </head>
@@ -21,16 +19,18 @@
         <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
           <i class="fa fa-bars"></i>
         </label>
-        <a href="#" class="logo"><h1>Secouez-moi...</h1></a>
+        <a href="#" class="logo">
+          <h1>Secouez-moi...</h1>
+        </a>
         <input type="checkbox" id="chkToggle">
         <ul class="main-nav" id="js-menu">
           <li>
             <a href="#info" id="information" class="nav-links">COMMENT JOUER? </a>
           </li>
           <li>
-            <a href="#" class="nav-links">CONTACT</a>
+            <a href="#contact" id="contactform" class="nav-links">CONTACT</a>
           </li>
-          
+
         </ul>
       </nav>
     </header>
@@ -38,7 +38,7 @@
       <div class="middle">
         <div class="content">
           <h2 class="trouver">Sélectionnez</h2>
-          <h2 class="hasard">au hasard</h2>    
+          <h2 class="hasard">au hasard</h2>
           <div class="et">UN DEV...</div>
           <a href="#info"><i id="iconeinfo" class="fas fa-info-circle"></i></a>
           <!--<div><img src="img/jeteste.png" alt="je teste" > </div> -->
@@ -62,38 +62,18 @@
           </div>
         </div>
       </div>
-    <section>
-      <div class="test">
-      </div>
-    </section>
-    <div class="contactsection">
-    <h1>Contact us</h1>
-    <form action="https://formspree.io/unicorncat.r.us@gmail.com" method="POST">
-        <label>
-            E-mail 
-            <input type="email" name="email" class="email"/>
-        </label>
-        <label>
-            Subject
-            <input type="text" name="subject" class="subject">
-        </label>
-        <label>
-            Message
-            <textarea name="message" class="message" cols="30" rows="3"></textarea>
-        </label>
-        <div class="status">
-
+      <section>
+        <div class="test">      
         </div>
-        <button type="submit" class="submit">Send</button>
-    </form>
-  </div>
-  </main>
+      </section>
+
+    </main>
     <footer>
-     <div>©les Dev déterminés <a href="#haut"><i class="fas fa-arrow-alt-circle-up"></i></a> </div>
+      <div>©les Dev déterminés <a href="#haut"><i class="fas fa-arrow-alt-circle-up"></i></a> </div>
     </footer>
   </div>
- 
-  <script type="text/javascript" src="https://cdn.rawgit.com/alexgibson/shake.js/master/shake.js"></script>
+  <script src="javascript/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
 </body>
 
 </html>

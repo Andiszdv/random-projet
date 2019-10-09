@@ -1,21 +1,6 @@
-/*contact*/
-label, input, textarea {
-  display: block;
-  border-radius: 7px;
-}
-input {
-  width: 395px;
-}
-textarea {
-  width: 395px;
-}
-button {
-  width: 100%;
-  background-color: rgb(185, 88, 164);
-  border-radius: 5px;
-  padding-bottom:10px;
-  margin-bottom:10px;
-}
+/*smooth*/
+
+
  /*flex*/
 html, body {
   font-family: "roboto", sans serif;
@@ -87,16 +72,6 @@ transform:rotate(20deg);
 }
 h2.hasard{
   transform:rotate(-5deg);
-}
-
-
-.formulaire{
-  padding-left: 7rem;
-  color:#fff;
-  font-size: 2.5em;
-  font-family: "roboto", sans serif;
-  transform:rotate(-15deg);
-
 }
 .fullpage {
   display:flex;
@@ -237,6 +212,35 @@ hyphens: auto;
 .fo9 { grid-area: fo9; }
 
 .fo10 { grid-area: fo10; }
+
+
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "formaera hand2";
+}
+
+.formaera { grid-area: formaera;
+  padding-left: 5%; 
+}
+.formaera h2{
+    color:#000;
+}
+
+.hand2 { grid-area: hand2; 
+  margin-right: 25%;
+  }
+
+  .formaera button {
+    font: 400 24px system-ui;
+    padding: 4px 7px 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(50, 50, 50) rgb(209, 209, 209) rgb(186, 186, 186);
+    border-image: initial;
+}
 
 /*anim fd*/
 @-webkit-keyframes color-change-2x {
@@ -441,27 +445,14 @@ animation slide-out-X
   font-family: "anton", sans serif;
  letter-spacing: 0.5em;
 }
-h1 {
-  font-family: 'anton',sans serif;
-  letter-spacing:5px;
-  margin-top:Opx;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-}
-.contactsection {
-  background-color: rgb(204, 201, 201);
-  display: flex;
-  justify-content: space-around;
-  text-align: start;
-}
+
 .navbar-toggle {
   position: absolute;
   top: 10px;
   right: 20px;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 16px;
+  font-size: 24px;
 }
 
 #chkToggle {
@@ -592,6 +583,11 @@ padding-left: 25%;
 .middle {
   padding-left: 0px;
   padding-top: 0px;
+}
+.grid-container2 {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  font-size: 12px;
 }
 
 }
