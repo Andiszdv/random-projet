@@ -1,7 +1,3 @@
-/*smooth*/
-
-
- /*flex*/
 html, body {
   font-family: "roboto", sans serif;
   margin:0;
@@ -211,9 +207,8 @@ hyphens: auto;
 
 .fo9 { grid-area: fo9; }
 
-.fo10 { grid-area: fo10; }
-
-
+.fo10 { grid-area: fo10; 
+}
 
 .grid-container2 {
   display: grid;
@@ -221,14 +216,35 @@ hyphens: auto;
   grid-template-rows: 1fr;
   grid-template-areas: "formaera hand2";
 }
-
 .formaera { grid-area: formaera;
-  padding-left: 5%; 
+  padding-left: 5%;
+  box-sizing: border-box;
+  margin-right: 5%;
+  background-color: rgb(248, 108, 236);
 }
 .formaera h2{
     color:#000;
 }
-
+input {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 35px;
+  font-size: 20px;
+  border-radius: 9px;
+}
+textarea {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  width: 450px;
+  border-radius: 9px;
+}
+.submit {
+  background-color: pink;
+  border: 5px solid black;
+  border-radius: 7px;
+}
 .hand2 { grid-area: hand2; 
   margin-right: 25%;
   }
@@ -509,8 +525,6 @@ animation slide-out-X
  
  
 }
-  
-  
 .logo {
 font-family: "anton", sans serif;
 display: inline-block;
@@ -519,7 +533,31 @@ margin-top: 10px;
 margin-left: 20px;
 color: #999;
 }
-
+.formaera { grid-area: formaera;
+  padding-left: 0;
+  box-sizing: border-box;
+  margin-right: 0;
+  background-color: rgb(248, 108, 236);
+  width: 370px;
+}
+input {
+  width: 285px;
+  height: 15px;
+  font-size: 20px;
+  margin-left:30px;
+}
+textarea {
+  font-size: 20px;
+  width: 285px;
+  margin-left:30px;
+}
+label {
+  display: flex;
+  justify-content: center;
+}
+button{
+  margin-left:120px;
+}
 @media screen and (max-width: 768px) {
 h1{
   font-size: 16px;
@@ -532,7 +570,29 @@ h1{
 section {
   padding: 0px;
 }
-
+.formaera { grid-area: formaera;
+  padding-left: 0;
+  box-sizing: border-box;
+  margin-right: 0;
+  background-color: rgb(248, 108, 236);
+  width: 350px;
+  margin-left:5px;
+}
+input {
+  width: 285px;
+  height: 15px;
+  font-size: 20px;
+  margin-left:30px;
+}
+textarea {
+  font-size: 20px;
+  width: 285px;
+  margin-left:30px;
+}
+label {
+  display: flex;
+  justify-content: center;
+}
 h2.trouver{
   padding-left: 3rem;
 transform:rotate(5deg);

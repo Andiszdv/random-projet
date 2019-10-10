@@ -11,13 +11,8 @@ function _shuffle(array) {
   }
   return array;
 }
-/*var form = document.querySelector("form");
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-  let input = document.getElementById('name');
-  _currentItems.push(input.value);
-  console.log(_currentItems);
-});*/
+
+
 function clickRandom() {
   let randomItem = (function (allItems) {
     try {
@@ -50,20 +45,6 @@ element.style.animation = 'motion';
 element2.style.animation = 'motion2';
 
 
-
-
-/*const personnage1 = document.querySelector('.container')
-personnage1.innerHTML += `<div class="slideoutX"><img src="../img/personnages.png" alt="personnages"></div>`;*/
-
-/*for(let k = 0; k < _currentItems.length; k++ ){
-  let html = `<div> Bonjour ${_currentItems[k]}</div>`;
-  document.getElementById("noms").innerHTML = `Bonjour ${_currentItems[k]}`;
-
-  console.log(html);
-};/*
-
-
-
 /* trigger reflow */ 
 noms.offsetHeight;
 element.offsetHeight; 
@@ -71,11 +52,6 @@ element.style.animation = null;
 element2.offsetHeight; 
 element2.style.animation = null;  
 noms.style.filter = null;
-/*setTimeout(function(){personnage1.innerHTML  = `<div></div>`; }, 1000);*/
-
-
-
-
 
 }
 /*click*/
@@ -91,15 +67,6 @@ document.getElementById("iconeinfo").addEventListener("click", () => {
 document.getElementById("contactform").addEventListener("click", () => {
   contactHtml();
 });
-
-/*list names
-let input = document.getElementById('name');
-var form = document.querySelector("form");
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-  _currentItems.push(input.value);
-  console.log(_currentItems);
-});*/
 
 function infoHtml(){
 const infoList = document.querySelector('.test');
@@ -126,7 +93,6 @@ function contactHtml(){
   const formContact = document.querySelector('.test');
   formContact.innerHTML =`<div class="grid-container2">
   <div class="formaera">
-              <h2>Contactez-nous</h2>
               <form action="https://formspree.io/unicorncat.r.us@gmail.com" method="POST">
                 <p><label>E-mail :</label>
                   <input type="email" name="email" class="email" /></p>
