@@ -249,7 +249,7 @@ textarea {
   margin-right: 25%;
   }
 
-  .formaera button {
+.formaera button {
     font: 400 24px system-ui;
     padding: 4px 7px 4px;
     border-width: 1px;
@@ -555,7 +555,7 @@ label {
   display: flex;
   justify-content: center;
 }
-button{
+.submit{
   margin-left:120px;
 }
 @media screen and (max-width: 768px) {
